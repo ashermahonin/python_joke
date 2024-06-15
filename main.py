@@ -1,4 +1,4 @@
-import time #simple prank-virus, you just need to use AutoPy to EXE to create EXE file and send it to your friend
+import time
 import pygame
 from tkinter import *
 from tkinter import  messagebox
