@@ -10,9 +10,9 @@ pygame.init()
 pygame.display.set_icon(pygame.image.load("icon.png"))
 
 window = pygame.display.set_mode((850, 200))
-pygame.display.set_caption('Ваши данные перехвачены, следуйте инструкции')
+pygame.display.set_caption('Your data has been stolen! Follow the instructions!')
 font = pygame.font.SysFont("Lucida  Console", 25)
-text = font.render("у нас есть интересные видео с тобой ;)", 1, (51, 255, 51, 1))
+text = font.render("We have all of your information!)", 1, (51, 255, 51, 1))
 
 while True:
     for event in pygame.event.get():
@@ -20,8 +20,8 @@ while True:
             pygame.quit()
             time.sleep((0.10))
             window = pygame.display.set_mode((850, 100))
-            pygame.display.set_caption('Ваши данные перехвачены, следуйте инструкции')
-            messagebox.showerror("переводи 10К рублей на USDT:", "secret")
+            pygame.display.set_caption('Your data has been stolen!')
+            messagebox.showerror("Send me your smile-photo BRUH :D", "secret")
 
     window.fill((0, 0, 0))
     window.blit(text, (50, 50))
